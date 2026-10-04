@@ -1,0 +1,12 @@
+BASISOFT — installation du site avec publicités et statistiques
+
+1) Décompressez l'archive et gardez index.html, admin.html, config.js et logo.png ensemble.
+2) Dans Supabase > Project Settings > API, copiez Project URL et anon/public key.
+3) Ouvrez config.js et remplacez les deux valeurs d'exemple.
+4) Créez un bucket Storage nommé exactement publicites et activez Public bucket.
+5) Dans SQL Editor, exécutez le SQL de ce dossier (supabase-storage-policies.sql).
+6) Créez un utilisateur dans Authentication > Users avec votre e-mail et le mot de passe choisi.
+7) Copiez son UUID, puis exécutez : INSERT INTO public.administrateurs(user_id) VALUES ('UUID_ICI');
+8) Déployez les fichiers sur GitHub Pages. Ouvrez admin.html pour gérer les annonces.
+
+IMPORTANT : le mot de passe 20072007 est trop court pour un compte en ligne. Utilisez un mot de passe long et unique. Si vous tenez à ce code, ne l'utilisez pas comme mot de passe du compte administrateur.
